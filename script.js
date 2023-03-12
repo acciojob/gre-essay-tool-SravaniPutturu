@@ -6,5 +6,5 @@ input.addEventListener('input',()=>{
 	
 	content = input.value.trim();
 	
-	h3.innerHTML = content.split(/\s/).length;
+	h3.innerHTML = content.split(/\s+/ig).length;
 })
