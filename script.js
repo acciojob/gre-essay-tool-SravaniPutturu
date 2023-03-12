@@ -5,6 +5,12 @@ var content = "";
 input.addEventListener('input',()=>{
 	
 	content = input.value.trim();
+	if(content==""){
+		h3.innerHTML="0";
+	}else{
+		h3.innerHTML = content.split(/\s+/ig).length;
+	}
 	
-	h3.innerHTML = content.split(/\s+/ig).length;
+	
+	
 })
